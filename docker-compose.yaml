@@ -1,0 +1,9 @@
+services:
+  node:
+    image: node:12.2.0-alpine
+    working_dir: /app
+    volumes:
+      - .:/app:delegated
+    ports:
+      - '8000:8000'
+    tty: true
